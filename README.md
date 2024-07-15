@@ -23,7 +23,7 @@
 <strong>ㆍ 프로그래밍 언어</strong>: Java, HTML, CSS, JavaScript<br>
 <strong>ㆍ 프레임워크</strong>: Spring Boot 3.2.5<br>
 <strong>ㆍ DBMS</strong>: MySQL, H2<br>
-<strong>ㆍ 배포</strong>: Kakao krampoline, Docker, Kubernetes<br><br>
+<strong>ㆍ 배포</strong>: Kakao krampoline (Docker, Kubernetes)<br><br>
 
 ## 2. 주요 기능
 * 코드(Post) 및 댓글(Comment) CRUD 기능
