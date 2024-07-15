@@ -19,7 +19,7 @@
 
 <br>
 
->[최종 발표 PPT]([https://kdt-goorm.slack.com/files/U06BMUQKSKE/F070ZTFSJ7P/project_proposal.pdf](https://docs.google.com/presentation/d/1UbVTZNiwzYlFrY_9wZZicjKhuJtXjC4yo_6-8K3ooOM/edit?usp=sharing))
+> [최종 발표 PPT](https://docs.google.com/presentation/d/1UbVTZNiwzYlFrY_9wZZicjKhuJtXjC4yo_6-8K3ooOM/edit#slide=id.g27821047df5_0_0)
 
 <br>
 
