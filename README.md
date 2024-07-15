@@ -1,5 +1,14 @@
 # we-code
 
+## 목차
+1. [프로젝트 개요](#1-프로젝트-개요)
+2. [주요 기능](#2-주요-기능)
+3. [DB](#3-db)
+   - [ERD](#3-1-erd)
+   - [DB 설계도](#3-2-db-설계도)
+4. [API 설계](#4-api-설계)
+5. [상세 화면](#5-상세-화면)
+
 >[프로젝트 기획안 (PDF)](https://kdt-goorm.slack.com/files/U06BMUQKSKE/F070ZTFSJ7P/project_proposal.pdf)
 <br>
 
@@ -18,12 +27,12 @@
 <br>
 
 ## 1. 프로젝트 개요
-<strong>ㆍ 시행처</strong>: [구름 x 인프런] 자바 스프링 & 리액트 풀스택 개발자 성장 과정<br>
-<strong>ㆍ 기간</strong>: 2024.04 ~ 진행중<br>
+<strong>ㆍ 시행처</strong>:  [카카오x구름] Spring & React 풀스택 개발자 과정<br>
+<strong>ㆍ 기간</strong>: 2024.04 ~ 2024.05<br>
 <strong>ㆍ 프로그래밍 언어</strong>: Java, HTML, CSS, JavaScript<br>
 <strong>ㆍ 프레임워크</strong>: Spring Boot 3.2.5<br>
 <strong>ㆍ DBMS</strong>: MySQL, H2<br>
-<strong>ㆍ 배포</strong>: Kakao krampoline (Docker, Kubernetes)<br><br>
+<strong>ㆍ 배포</strong>: Kakao krampoline(Docker, Kubernetes)<br><br>
 
 ## 2. 주요 기능
 * 코드(Post) 및 댓글(Comment) CRUD 기능
