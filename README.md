@@ -3,10 +3,8 @@
 ## 목차
 1. [프로젝트 개요](#1-프로젝트-개요)
 2. [주요 기능](#2-주요-기능)
-3. [DB](#3-db)
-   - [ERD](#3-1-erd)
-   - [DB 설계도](#3-2-db-설계도)
-4. [API 설계](#4-api-설계)
+3. [DB 구조](#3-db-구조)
+4. [API 문서](#4-api-문서)
 5. [상세 화면](#5-상세-화면)
 
 <br>
@@ -15,7 +13,22 @@
 
 <br>
 
-## 팀: Code-6
+# 1. 프로젝트 개요
+
+<br>
+
+<strong>ㆍ 시행처</strong>: [카카오x구름] Spring & React 풀스택 개발자 과정<br><br>
+<strong>ㆍ 기간</strong>: 2024.05 ~ 2024.07<br>
+
+
+<strong>ㆍ 기술 스택 </strong> <br>
+| Back-End     | Database         | Deployment                |
+|--------------|------------------|---------------------------|
+| Spring Boot 3.2.5 | MySQL, H2          | Kakao krampoline, Docker, Kubernetes |
+| ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![H2](https://img.shields.io/badge/H2-0078D4?style=for-the-badge&logo=h2&logoColor=white) | ![Kakao krampoline](https://img.shields.io/badge/Kakao%20krampoline-FFCD00?style=for-the-badge&logo=kakao&logoColor=black) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white) |
+
+
+## 팀 구성
 
 | ![yjiiny](https://avatars.githubusercontent.com/u/153581188) | ![OiPKL](https://avatars.githubusercontent.com/u/130027416) | ![jw-park-github](https://avatars.githubusercontent.com/u/165545220) | ![rpghks07](https://avatars.githubusercontent.com/u/2668683) |
 | --- | --- | --- | --- |
@@ -23,13 +36,7 @@
 
 <br>
 
-# 1. 프로젝트 개요
-<strong>ㆍ 시행처</strong>: [카카오x구름] Spring & React 풀스택 개발자 과정<br>
-<strong>ㆍ 기간</strong>: 2024.04 ~ 2024.05<br>
-<strong>ㆍ 프로그래밍 언어</strong>: Java, HTML, CSS, JavaScript<br>
-<strong>ㆍ 프레임워크</strong>: Spring Boot 3.2.5<br>
-<strong>ㆍ DBMS</strong>: MySQL, H2<br>
-<strong>ㆍ 배포</strong>: Kakao krampoline(Docker, Kubernetes)<br><br>
+
 
 # 2. 주요 기능
 * 코드(Post) 및 댓글(Comment) CRUD 기능
@@ -38,16 +45,14 @@
 
 <br>
 
-# 3. DB
+# 3. DB 구조
 
 <br>
 
-## 3-1) ERD
 <img width="960" alt="ERD" src="https://github.com/code-six/we-code-0509/assets/165545220/74d42c57-966f-4f94-bf18-8e0b4a8998d0"><br>
 
 <br>
 
-## 3-2) DB 설계도
 
 ### **SiteUser (회원)**
 
@@ -111,7 +116,7 @@
 <br>
 <br>
 
-# 4. API 설계
+# 4. API 문서
 
 <br>
 
