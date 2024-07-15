@@ -11,7 +11,11 @@
 
 <br>
 
-## 팀: 코드6
+> [최종 발표 PPT](https://docs.google.com/presentation/d/1UbVTZNiwzYlFrY_9wZZicjKhuJtXjC4yo_6-8K3ooOM/edit#slide=id.g27821047df5_0_0)
+
+<br>
+
+## 팀: Code-6
 
 | ![yjiiny](https://avatars.githubusercontent.com/u/153581188) | ![OiPKL](https://avatars.githubusercontent.com/u/130027416) | ![jw-park-github](https://avatars.githubusercontent.com/u/165545220) | ![rpghks07](https://avatars.githubusercontent.com/u/2668683) |
 | --- | --- | --- | --- |
@@ -19,12 +23,8 @@
 
 <br>
 
-> [최종 발표 PPT](https://docs.google.com/presentation/d/1UbVTZNiwzYlFrY_9wZZicjKhuJtXjC4yo_6-8K3ooOM/edit#slide=id.g27821047df5_0_0)
-
-<br>
-
 # 1. 프로젝트 개요
-<strong>ㆍ 시행처</strong>:  [카카오x구름] Spring & React 풀스택 개발자 과정<br>
+<strong>ㆍ 시행처</strong>: [카카오x구름] Spring & React 풀스택 개발자 과정<br>
 <strong>ㆍ 기간</strong>: 2024.04 ~ 2024.05<br>
 <strong>ㆍ 프로그래밍 언어</strong>: Java, HTML, CSS, JavaScript<br>
 <strong>ㆍ 프레임워크</strong>: Spring Boot 3.2.5<br>
