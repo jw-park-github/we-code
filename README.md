@@ -33,11 +33,11 @@
 
 ## 3. DB
 
-## 3-1) ERD
+### 3-1) ERD
 <img width="960" alt="ERD" src="https://github.com/code-six/we-code-0509/assets/165545220/74d42c57-966f-4f94-bf18-8e0b4a8998d0"><br>
 
 
-## 3-2) DB 설계도
+### 3-2) DB 설계도
 
 ### **SiteUser (회원)**
 
@@ -94,7 +94,6 @@
 <br>
 
 ## 4. API 설계
-
 
 
 ### AnswerController
