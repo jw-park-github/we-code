@@ -32,16 +32,16 @@
 
 <br>
 
-## 3. DB
+# 3. DB
 
 <br>
 
-### 3-1) ERD
+## 3-1) ERD
 <img width="960" alt="ERD" src="https://github.com/code-six/we-code-0509/assets/165545220/74d42c57-966f-4f94-bf18-8e0b4a8998d0"><br>
 
 <br>
 
-### 3-2) DB 설계도
+## 3-2) DB 설계도
 
 ### **SiteUser (회원)**
 
@@ -51,6 +51,8 @@
 | email | String | Not Null | 이메일 주소 |
 | password | String | Not Null | 비밀번호 |
 | username | String | Not Null | 닉네임 |
+
+<br>
 
 ### **Post (게시글)**
 
@@ -63,6 +65,8 @@
 | createDate | LocalDateTime | Not Null | 게시글 작성일 |
 | modifyDate | LocalDateTime | Not Null | 게시글 수정일 |
 
+<br>
+
 ### **Comment (댓글)**
 
 | 필드명 | 자료형 | 제약 조건 | 설명 |
@@ -72,6 +76,8 @@
 | content | String | Not Null | 댓글 내용 |
 | createDate | LocalDateTime | Not Null | 댓글 작성일 |
 | modifyDate | LocalDateTime | Not Null | 댓글 수정일 |
+
+<br>
 
 ### **Question (질문)**
 
@@ -83,6 +89,8 @@
 | content | String | Not Null | 질문 내용 |
 | createDate | LocalDateTime | Not Null | 질문 작성일 |
 | modifyDate | LocalDateTime | Not Null | 질문 수정일 |
+
+<br>
 
 ### **Answer (답변)**
 
@@ -97,10 +105,10 @@
 <br>
 <br>
 
-## 4. API 설계
+# 4. API 설계
 
 
-### AnswerController
+## AnswerController
 
 | Method | API          | Path                | Query | Body           | Status | JSON Result                   |
 |--------|--------------|---------------------|-------|----------------|--------|-------------------------------|
@@ -112,7 +120,7 @@
 
 <br>
 
-### CommentController
+## CommentController
 
 | Method | API           | Path                  | Query | Body            | Status | JSON Result                   |
 |--------|---------------|-----------------------|-------|-----------------|--------|-------------------------------|
@@ -124,7 +132,7 @@
 
 <br>
 
-### MyPageController
+## MyPageController
 
 | Method | API             | Path                  | Query | Body                         | Status | JSON Result                                       |
 |--------|-----------------|-----------------------|-------|------------------------------|--------|---------------------------------------------------|
@@ -136,7 +144,7 @@
 
 <br>
 
-### PostController
+## PostController
 
 | Method | API            | Path                  | Query | Body       | Status | JSON Result                    |
 |--------|----------------|-----------------------|-------|------------|--------|--------------------------------|
@@ -151,7 +159,7 @@
 
 <br>
 
-### QuestionController
+## QuestionController
 
 | Method | API              | Path                    | Query | Body          | Status | JSON Result                    |
 |--------|------------------|-------------------------|-------|---------------|--------|--------------------------------|
@@ -166,7 +174,7 @@
 
 <br>
 
-### MainController
+## MainController
 
 | Method | API          | Path  | Query | Body | Status | JSON Result                    |
 |--------|--------------|-------|-------|------|--------|--------------------------------|
@@ -175,7 +183,7 @@
 <br>
 <br>
 
-## 5. 상세 화면
+# 5. 상세 화면
 <strong>[/post/list]</strong><br>
 ![메인화면_코드 목록](https://github.com/code-six/we-code/assets/165545220/3e6fceba-c38f-431a-8c00-67e5326506fd)
 
