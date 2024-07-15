@@ -24,7 +24,6 @@
 <strong>ㆍ 기술 스택 </strong> <br>
 | Back-End     | Database         | Deployment                |
 |--------------|------------------|---------------------------|
-| Spring Boot 3.2.5 | MySQL, H2          | Kakao krampoline, Docker, Kubernetes |
 | ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![H2](https://img.shields.io/badge/H2-0078D4?style=for-the-badge&logo=h2&logoColor=white) | ![Kakao krampoline](https://img.shields.io/badge/Kakao%20krampoline-FFCD00?style=for-the-badge&logo=kakao&logoColor=black) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white) |
 
 
