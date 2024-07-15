@@ -184,6 +184,7 @@
 <br>
 
 # 5. 상세 화면
+
 <strong>[/post/list]</strong><br>
 ![메인화면_코드 목록](https://github.com/code-six/we-code/assets/165545220/3e6fceba-c38f-431a-8c00-67e5326506fd)
 
