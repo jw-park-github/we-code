@@ -9,13 +9,6 @@
 4. [API 설계](#4-api-설계)
 5. [상세 화면](#5-상세-화면)
 
->[프로젝트 기획안 (PDF)](https://kdt-goorm.slack.com/files/U06BMUQKSKE/F070ZTFSJ7P/project_proposal.pdf)
-<br>
-
->[UI 프로토타입 (Figma)](https://www.figma.com/file/aENtsNNmriJLQ7ikxacdpW/%EC%BD%94%EB%93%9C%EC%8B%9D%EC%8A%A4-UI-%EC%B4%88%EC%95%88?type=design&node-id=0-1&mode=design)
-<br>
-
->[코드 식스(6조) 프로젝트 페이지 (Notion)](https://www.notion.so/6a94725cc77c40a0b2ee645d1e5c714c)
 <br>
 
 ## 팀: 코드6
@@ -26,7 +19,19 @@
 
 <br>
 
-## 1. 프로젝트 개요
+>[프로젝트 기획안 (PDF)](https://kdt-goorm.slack.com/files/U06BMUQKSKE/F070ZTFSJ7P/project_proposal.pdf)
+
+<br>
+
+>[UI 프로토타입 (Figma)](https://www.figma.com/file/aENtsNNmriJLQ7ikxacdpW/%EC%BD%94%EB%93%9C%EC%8B%9D%EC%8A%A4-UI-%EC%B4%88%EC%95%88?type=design&node-id=0-1&mode=design)
+
+<br>
+
+>[코드 식스(6조) 프로젝트 페이지 (Notion)](https://www.notion.so/6a94725cc77c40a0b2ee645d1e5c714c)
+
+<br>
+
+# 1. 프로젝트 개요
 <strong>ㆍ 시행처</strong>:  [카카오x구름] Spring & React 풀스택 개발자 과정<br>
 <strong>ㆍ 기간</strong>: 2024.04 ~ 2024.05<br>
 <strong>ㆍ 프로그래밍 언어</strong>: Java, HTML, CSS, JavaScript<br>
@@ -34,7 +39,7 @@
 <strong>ㆍ DBMS</strong>: MySQL, H2<br>
 <strong>ㆍ 배포</strong>: Kakao krampoline(Docker, Kubernetes)<br><br>
 
-## 2. 주요 기능
+# 2. 주요 기능
 * 코드(Post) 및 댓글(Comment) CRUD 기능
 * 질문(Question) 및 답변(Answer) CRUD 기능
 * 회원가입, 로그인, 로그아웃, 회원 정보 관리
@@ -116,6 +121,7 @@
 
 # 4. API 설계
 
+<br>
 
 ## AnswerController
 
