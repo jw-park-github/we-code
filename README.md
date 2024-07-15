@@ -29,8 +29,7 @@
 * 코드(Post) 및 댓글(Comment) CRUD 기능
 * 질문(Question) 및 답변(Answer) CRUD 기능
 * 회원가입, 로그인, 로그아웃, 회원 정보 관리
-  
-<br>
+
 
 ## 3. DB
 
