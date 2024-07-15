@@ -18,20 +18,19 @@
 <br>
 
 ## 1. 프로젝트 개요
-<strong>ㆍ 시행처</strong>: [구름 x 인프런] 자바 스프링 & 리액트 풀스택 개발자 성장 과정<br><br>
-<strong>ㆍ 기간</strong>: 2024.04 ~ 진행중<br><br>
-<strong>ㆍ 프로그래밍 언어</strong>: Java, HTML, CSS, JavaScript<br><br>
-<strong>ㆍ 프레임워크</strong>: Spring Boot 3.2.5<br><br>
-<strong>ㆍ DBMS</strong>: H2<br><br>
-<strong>ㆍ 배포</strong>: 카카오 크램폴린<br><br>
+<strong>ㆍ 시행처</strong>: [구름 x 인프런] 자바 스프링 & 리액트 풀스택 개발자 성장 과정<br>
+<strong>ㆍ 기간</strong>: 2024.04 ~ 진행중<br>
+<strong>ㆍ 프로그래밍 언어</strong>: Java, HTML, CSS, JavaScript<br>
+<strong>ㆍ 프레임워크</strong>: Spring Boot 3.2.5<br>
+<strong>ㆍ DBMS</strong>: MySQL, H2<br>
+<strong>ㆍ 배포</strong>: Kakao krampoline, Docker, Kubernetes<br><br>
 
 ## 2. 주요 기능
 * 코드(Post) 및 댓글(Comment) CRUD 기능
-  
 * 질문(Question) 및 답변(Answer) CRUD 기능
-  
 * 회원가입, 로그인, 로그아웃, 회원 정보 관리
   
+<br>
 
 ## 3. DB
 
@@ -92,11 +91,14 @@
 | createDate | LocalDateTime | Not Null | 답변 작성일 |
 | modifyDate | LocalDateTime | Not Null | 답변 수정일 |
 
+<br>
+<br>
+
 ## 4. API 설계
 
-# API Documentation
 
-## AnswerController
+
+### AnswerController
 
 | Method | API          | Path                | Query | Body           | Status | JSON Result                   |
 |--------|--------------|---------------------|-------|----------------|--------|-------------------------------|
@@ -106,7 +108,9 @@
 | GET    | Delete Answer | /answer/delete/{id} | None  | None           | 302    | 질문 상세 페이지로 리다이렉트 |
 | GET    | Vote Answer   | /answer/vote/{id}   | None  | None           | 302    | 질문 상세 페이지로 리다이렉트 |
 
-## CommentController
+<br>
+
+### CommentController
 
 | Method | API           | Path                  | Query | Body            | Status | JSON Result                   |
 |--------|---------------|-----------------------|-------|-----------------|--------|-------------------------------|
@@ -116,7 +120,9 @@
 | GET    | Delete Comment| /comment/delete/{commentId} | None | None         | 302    | 게시물 상세 페이지로 리다이렉트 |
 | GET    | Vote Comment  | /comment/vote/{commentId} | None | None          | 302    | 게시물 상세 페이지로 리다이렉트 |
 
-## MyPageController
+<br>
+
+### MyPageController
 
 | Method | API             | Path                  | Query | Body                         | Status | JSON Result                                       |
 |--------|-----------------|-----------------------|-------|------------------------------|--------|---------------------------------------------------|
@@ -126,7 +132,9 @@
 | POST   | Update Password | /user/mypage/updatePassword | None | currentPassword, newPassword | 200 | 비밀번호 변경됨                                   |
 | POST   | Upload Profile  | /user/mypage/uploadProfile | None | MultipartFile file          | 302    | 프로필 이미지 업로드됨                             |
 
-## PostController
+<br>
+
+### PostController
 
 | Method | API            | Path                  | Query | Body       | Status | JSON Result                    |
 |--------|----------------|-----------------------|-------|------------|--------|--------------------------------|
@@ -139,7 +147,9 @@
 | GET    | Delete Post    | /post/delete/{id}     | None  | None       | 302    | 게시물 목록 페이지로 리다이렉트  |
 | GET    | Vote Post      | /post/vote/{id}       | None  | None       | 302    | 게시물 상세 페이지로 리다이렉트  |
 
-## QuestionController
+<br>
+
+### QuestionController
 
 | Method | API              | Path                    | Query | Body          | Status | JSON Result                    |
 |--------|------------------|-------------------------|-------|---------------|--------|--------------------------------|
@@ -152,7 +162,9 @@
 | GET    | Delete Question  | /question/delete/{id}   | None  | None          | 302    | 질문 목록 페이지로 리다이렉트  |
 | GET    | Vote Question    | /question/vote/{id}     | None  | None          | 302    | 질문 상세 페이지로 리다이렉트  |
 
-## MainController
+<br>
+
+### MainController
 
 | Method | API          | Path  | Query | Body | Status | JSON Result                    |
 |--------|--------------|-------|-------|------|--------|--------------------------------|
