@@ -94,61 +94,72 @@
 
 ## 4. API 설계
 
-### **SiteUser (회원)**
+# API Documentation
 
-| 기능            | Method | URL                | Return                          |
-|----------------|--------|--------------------|---------------------------------|
-| 회원가입 폼 표시  | GET    | `/user/signup`     | Return `signup_form` 페이지      |
-| 회원가입         | POST   | `/user/signup`     | Redirect to `메인 페이지`         |
-| 로그인 폼 표시   | GET    | `/user/login`      | Return `login_form` 페이지       |
+## AnswerController
 
-### **Post (게시글)**
+| Method | API          | Path                | Query | Body           | Status | JSON Result                   |
+|--------|--------------|---------------------|-------|----------------|--------|-------------------------------|
+| POST   | Create Answer| /answer/create/{id} | None  | AnswerForm     | 302    | 질문 상세 페이지로 리다이렉트 |
+| GET    | Modify Answer Form | /answer/modify/{id} | None | None       | 200    | 답변 수정 폼                   |
+| POST   | Modify Answer | /answer/modify/{id} | None  | AnswerForm     | 302    | 질문 상세 페이지로 리다이렉트 |
+| GET    | Delete Answer | /answer/delete/{id} | None  | None           | 302    | 질문 상세 페이지로 리다이렉트 |
+| GET    | Vote Answer   | /answer/vote/{id}   | None  | None           | 302    | 질문 상세 페이지로 리다이렉트 |
 
-| 기능         | Method | URL                    | Return                        |
-|--------------|--------|------------------------|-------------------------------|
-| 게시글 목록 조회 | GET    | `/post/list`           | Return `post_list` 페이지      |
-| 게시글 상세 조회 | GET    | `/post/detail/{id}`    | Return `post_detail` 페이지    |
-| 게시글 생성 폼 표시| GET    | `/post/create`         | Return `post_form` 페이지      |
-| 게시글 생성   | POST   | `/post/create`         | Redirect to `게시글 목록 페이지` |
-| 게시글 수정 폼 표시| GET    | `/post/modify/{id}`    | Return `post_form` 페이지      |
-| 게시글 수정   | POST   | `/post/modify/{id}`    | Redirect to `게시글 상세 페이지` |
-| 게시글 삭제   | GET    | `/post/delete/{id}`    | Redirect to `게시글 목록 페이지` |
-| 게시글 투표   | GET    | `/post/vote/{id}`      | Redirect to `게시글 상세 페이지` |
+## CommentController
 
-### **Comment (댓글)**
+| Method | API           | Path                  | Query | Body            | Status | JSON Result                   |
+|--------|---------------|-----------------------|-------|-----------------|--------|-------------------------------|
+| POST   | Create Comment| /comment/create/{postId} | None  | CommentForm    | 302    | 게시물 상세 페이지로 리다이렉트 |
+| GET    | Modify Comment Form | /comment/modify/{commentId} | None | None | 200 | 댓글 수정 폼                   |
+| POST   | Modify Comment| /comment/modify/{commentId} | None | CommentForm   | 302    | 게시물 상세 페이지로 리다이렉트 |
+| GET    | Delete Comment| /comment/delete/{commentId} | None | None         | 302    | 게시물 상세 페이지로 리다이렉트 |
+| GET    | Vote Comment  | /comment/vote/{commentId} | None | None          | 302    | 게시물 상세 페이지로 리다이렉트 |
 
-| 기능         | Method | URL                          | Return                        |
-|--------------|--------|------------------------------|-------------------------------|
-| 댓글 생성    | POST   | `/comment/create/{postId}`   | Redirect to `게시글 상세 페이지` |
-| 댓글 수정 폼 표시 | GET    | `/comment/modify/{commentId}` | Return `comment_form` 페이지   |
-| 댓글 수정    | POST   | `/comment/modify/{commentId}` | Redirect to `게시글 상세 페이지` |
-| 댓글 삭제    | GET    | `/comment/delete/{commentId}` | Redirect to `게시글 상세 페이지` |
-| 댓글 투표    | GET    | `/comment/vote/{commentId}`   | Redirect to `게시글 상세 페이지` |
+## MyPageController
 
-### **Question (질문)**
+| Method | API             | Path                  | Query | Body                         | Status | JSON Result                                       |
+|--------|-----------------|-----------------------|-------|------------------------------|--------|---------------------------------------------------|
+| GET    | My Page         | /user/mypage          | None  | None                         | 200    | 마이페이지 (사용자 정보, 게시물, 댓글 목록)        |
+| POST   | Update Nickname | /user/mypage/updateNickname | None | nickname                 | 200    | 닉네임 변경됨. 5초 후 로그아웃 후 재로그인 필요     |
+| POST   | Update Email    | /user/mypage/updateEmail | None | email                     | 200    | 이메일 변경됨                                     |
+| POST   | Update Password | /user/mypage/updatePassword | None | currentPassword, newPassword | 200 | 비밀번호 변경됨                                   |
+| POST   | Upload Profile  | /user/mypage/uploadProfile | None | MultipartFile file          | 302    | 프로필 이미지 업로드됨                             |
 
-| 기능         | Method | URL                      | Return                          |
-|--------------|--------|--------------------------|---------------------------------|
-| 질문 목록 조회  | GET    | `/question/list`         | Return `question_list` 페이지    |
-| 질문 상세 조회  | GET    | `/question/detail/{id}`  | Return `question_detail` 페이지  |
-| 질문 생성 폼 표시| GET    | `/question/create`       | Return `question_form` 페이지    |
-| 질문 생성     | POST   | `/question/create`       | Redirect to `질문 목록 페이지`     |
-| 질문 수정 폼 표시| GET    | `/question/modify/{id}`  | Return `question_form` 페이지    |
-| 질문 수정     | POST   | `/question/modify/{id}`  | Redirect to `질문 상세 페이지`     |
-| 질문 삭제     | GET    | `/question/delete/{id}`  | Redirect to `메인 페이지`         |
-| 질문 투표     | GET    | `/question/vote/{id}`    | Redirect to `질문 상세 페이지`     |
+## PostController
 
-### **Answer (답변)**
+| Method | API            | Path                  | Query | Body       | Status | JSON Result                    |
+|--------|----------------|-----------------------|-------|------------|--------|--------------------------------|
+| GET    | List Posts     | /post/list            | page, kw | None   | 200    | 게시물 목록 페이지               |
+| GET    | Detail Post    | /post/detail/{id}     | None  | None       | 200    | 게시물 상세 페이지               |
+| GET    | Create Post Form | /post/create        | None  | None       | 200    | 게시물 생성 폼                   |
+| POST   | Create Post    | /post/create          | None  | PostForm   | 302    | 게시물 목록 페이지로 리다이렉트  |
+| GET    | Modify Post Form | /post/modify/{id}   | None  | None       | 200    | 게시물 수정 폼                   |
+| POST   | Modify Post    | /post/modify/{id}     | None  | PostForm   | 302    | 게시물 상세 페이지로 리다이렉트  |
+| GET    | Delete Post    | /post/delete/{id}     | None  | None       | 302    | 게시물 목록 페이지로 리다이렉트  |
+| GET    | Vote Post      | /post/vote/{id}       | None  | None       | 302    | 게시물 상세 페이지로 리다이렉트  |
 
-| 기능           | Method | URL                   | Return                         |
-|--------------|--------|-----------------------|--------------------------------|
-| 메인 페이지 리다이렉트 | GET    | `/`                   | Redirect to `/question/list`    |
-| 답변 생성        | POST   | `/answer/create/{id}` | Redirect to `질문 상세 페이지`     |
-| 답변 수정 폼 표시   | GET    | `/answer/modify/{id}` | Return `answer_form` 페이지    |
-| 답변 수정       | POST   | `/answer/modify/{id}` | Redirect to `질문 상세 페이지`     |
-| 답변 삭제       | GET    | `/answer/delete/{id}` | Redirect to `질문 상세 페이지`     |
-| 답변 투표       | GET    | `/answer/vote/{id}`   | Redirect to `질문 상세 페이지`     |
+## QuestionController
 
+| Method | API              | Path                    | Query | Body          | Status | JSON Result                    |
+|--------|------------------|-------------------------|-------|---------------|--------|--------------------------------|
+| GET    | List Questions   | /question/list          | page, kw | None      | 200    | 질문 목록 페이지               |
+| GET    | Detail Question  | /question/detail/{id}   | None  | None          | 200    | 질문 상세 페이지               |
+| GET    | Create Question Form | /question/create    | None  | None          | 200    | 질문 생성 폼                   |
+| POST   | Create Question  | /question/create        | None  | QuestionForm  | 302    | 질문 목록 페이지로 리다이렉트  |
+| GET    | Modify Question Form | /question/modify/{id} | None  | None       | 200    | 질문 수정 폼                   |
+| POST   | Modify Question  | /question/modify/{id}   | None  | QuestionForm  | 302    | 질문 상세 페이지로 리다이렉트  |
+| GET    | Delete Question  | /question/delete/{id}   | None  | None          | 302    | 질문 목록 페이지로 리다이렉트  |
+| GET    | Vote Question    | /question/vote/{id}     | None  | None          | 302    | 질문 상세 페이지로 리다이렉트  |
+
+## MainController
+
+| Method | API          | Path  | Query | Body | Status | JSON Result                    |
+|--------|--------------|-------|-------|------|--------|--------------------------------|
+| GET    | Root Redirect| /     | None  | None | 302    | 게시물 목록 페이지로 리다이렉트 |
+
+<br>
+<br>
 
 ## 5. 상세 화면
 <strong>[/post/list]</strong><br>
