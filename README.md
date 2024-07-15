@@ -30,12 +30,16 @@
 * 질문(Question) 및 답변(Answer) CRUD 기능
 * 회원가입, 로그인, 로그아웃, 회원 정보 관리
 
+<br>
 
 ## 3. DB
+
+<br>
 
 ### 3-1) ERD
 <img width="960" alt="ERD" src="https://github.com/code-six/we-code-0509/assets/165545220/74d42c57-966f-4f94-bf18-8e0b4a8998d0"><br>
 
+<br>
 
 ### 3-2) DB 설계도
 
