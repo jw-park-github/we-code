@@ -1,12 +1,12 @@
 # we-code
 
->[코드 식스(6조) 프로젝트 페이지 (Notion)](https://www.notion.so/6a94725cc77c40a0b2ee645d1e5c714c)
-<br>
-
 >[프로젝트 기획안 (PDF)](https://kdt-goorm.slack.com/files/U06BMUQKSKE/F070ZTFSJ7P/project_proposal.pdf)
 <br>
 
 >[UI 프로토타입 (Figma)](https://www.figma.com/file/aENtsNNmriJLQ7ikxacdpW/%EC%BD%94%EB%93%9C%EC%8B%9D%EC%8A%A4-UI-%EC%B4%88%EC%95%88?type=design&node-id=0-1&mode=design)
+<br>
+
+>[코드 식스(6조) 프로젝트 페이지 (Notion)](https://www.notion.so/6a94725cc77c40a0b2ee645d1e5c714c)
 <br>
 
 ## 팀: 코드6
