@@ -1,20 +1,50 @@
 # we-code
 
-1. [프로젝트 개요](#1-프로젝트-개요)
-2. [주요 기능](#2-주요-기능)
-3. [DB 구조](#3-db-구조)
-4. [API 문서](#4-api-문서)
-5. [상세 화면](#5-상세-화면)
+
+* [1. 개요](#1-개요)
+    * [1-1. 기본 정보](#1-1-기본-정보)
+    * [1-2. 기술 스택](#1-2-기술-스택)
+    * [1-3. 주요 기능](#1-3-주요-기능)
+
+* [2. DB 설계](#3-db-설계)
+    * [2-1. E-R Diagram](#2-1-e-r-diagram)
+    * [2-2. DB Schema](#2-2-db-schema)
+ 
+- [3. API 설계](#3-api-설계)
+
+- [4. UI](#3-UI)
 
 <br>
 
+# 1. 개요
 
-# 1. 프로젝트 개요
+## 1-1. 기본 정보
 
 <br>
 
-<strong>ㆍ 시행처</strong>: [카카오x구름] Spring & React 풀스택 개발자 과정<br><br>
-<strong>ㆍ 기간</strong>: 2024.05 ~ 2024.07<br>
+## 1-1. 기본 정보
+* 프로젝트명: **1차 팀 프로젝트**<br>
+* 주관: **[카카오x구름] Spring & React 풀스택 개발자 과정**<br>
+* 기간: 2024.04 ~ 2024.05<br>
+
+
+<table>
+  <tr>
+    <td><img src="https://avatars.githubusercontent.com/u/165545220" alt="jw-park-github" width="135"/></td>
+    <td><img src="https://avatars.githubusercontent.com/u/130027416" alt="OiPKL" width="135"/></td>
+    <td><img src="https://avatars.githubusercontent.com/u/153581188" alt="yjiiny" width="135"/></td>
+    <td><img src="https://avatars.githubusercontent.com/u/2668683" alt="rpghks07" width="135"/></td>
+  </tr>
+  <tr>
+    <td>BE & FE | <a href="https://github.com/jw-park-github">jw-park-github</a></td>
+    <td>BE | <a href="https://github.com/OiPKL">OiPKL</a></td>
+    <td>FE | <a href="https://github.com/yjiiny">yjiiny</a></td>
+    <td>BE | <a href="https://github.com/rpghks07">rpghks07</a></td>
+  </tr>
+</table>
+
+
+## 1-2. 기술 스택
 
 
 <strong>ㆍ 기술 스택 </strong> <br>
@@ -23,30 +53,29 @@
 | ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![H2](https://img.shields.io/badge/H2-0078D4?style=for-the-badge&logo=h2&logoColor=white) | ![Kakao krampoline](https://img.shields.io/badge/Kakao%20krampoline-FFCD00?style=for-the-badge&logo=kakao&logoColor=black) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white) |
 
 
-## 팀 구성
-
-| ![yjiiny](https://avatars.githubusercontent.com/u/153581188) | ![OiPKL](https://avatars.githubusercontent.com/u/130027416) | ![jw-park-github](https://avatars.githubusercontent.com/u/165545220) | ![rpghks07](https://avatars.githubusercontent.com/u/2668683) |
-| --- | --- | --- | --- |
-| [yjiiny](https://github.com/yjiiny) | [OiPKL](https://github.com/OiPKL) | [jw-park-github](https://github.com/jw-park-github) | [rpghks07](https://github.com/rpghks07) |
-
-<br>
 
 
+## 1-3. 주요 기능
 
-# 2. 주요 기능
+
 * 코드(Post) 및 댓글(Comment) CRUD 기능
 * 질문(Question) 및 답변(Answer) CRUD 기능
 * 회원가입, 로그인, 로그아웃, 회원 정보 관리
 
 <br>
 
-# 3. DB 구조
+# 2. DB 설계
+
+## 2-1. E-R Diagram
 
 <br>
 
 <img width="960" alt="ERD" src="https://github.com/code-six/we-code-0509/assets/165545220/74d42c57-966f-4f94-bf18-8e0b4a8998d0"><br>
 
 <br>
+
+
+## 2-2. DB Schema
 
 
 ### **SiteUser (회원)**
@@ -111,7 +140,7 @@
 <br>
 <br>
 
-# 4. API 문서
+# 3. API 설계
 
 <br>
 
@@ -190,7 +219,7 @@
 <br>
 <br>
 
-# 5. 상세 화면
+# 4. UI
 
 <strong>[/post/list]</strong><br>
 ![메인화면_코드 목록](https://github.com/code-six/we-code/assets/165545220/3e6fceba-c38f-431a-8c00-67e5326506fd)
