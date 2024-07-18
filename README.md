@@ -1,6 +1,6 @@
 # we-code
 
-## 목차
+* [1. 개요](#1-개요)
 1. [프로젝트 개요](#1-프로젝트-개요)
 2. [주요 기능](#2-주요-기능)
 3. [DB 구조](#3-db-구조)
@@ -9,9 +9,6 @@
 
 <br>
 
-> [최종 발표 PPT](https://docs.google.com/presentation/d/1UbVTZNiwzYlFrY_9wZZicjKhuJtXjC4yo_6-8K3ooOM/edit#slide=id.g27821047df5_0_0)
-
-<br>
 
 # 1. 프로젝트 개요
 
