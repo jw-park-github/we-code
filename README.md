@@ -1,6 +1,9 @@
 # we-code
 
 
+
+<br>
+
 * [1. 개요](#1-개요)
     * [1-1. 기본 정보](#1-1-기본-정보)
     * [1-2. 기술 스택](#1-2-기술-스택)
@@ -17,15 +20,11 @@
 <br>
 
 # 1. 개요
-
-## 1-1. 기본 정보
-
-<br>
-
 ## 1-1. 기본 정보
 * 프로젝트명: **1차 팀 프로젝트**<br>
 * 주관: **[카카오x구름] Spring & React 풀스택 개발자 과정**<br>
 * 기간: 2024.04 ~ 2024.05<br>
+
 
 
 <table>
@@ -43,6 +42,8 @@
   </tr>
 </table>
 
+<br>
+
 
 ## 1-2. 기술 스택
 
@@ -54,7 +55,7 @@
 | Template Engine | ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white) |
 
 
-
+<br>
 
 
 ## 1-3. 주요 기능
@@ -72,7 +73,7 @@
 
 <br>
 
-<img width="960" alt="ERD" src="https://github.com/code-six/we-code-0509/assets/165545220/74d42c57-966f-4f94-bf18-8e0b4a8998d0"><br>
+<img width="800" alt="ERD" src="https://github.com/code-six/we-code-0509/assets/165545220/74d42c57-966f-4f94-bf18-8e0b4a8998d0"><br>
 
 <br>
 
